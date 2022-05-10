@@ -12,11 +12,12 @@
     "dependencies": {
         "pg": "^8.7.3",
         "reflect-metadata": "^0.1.13",
+        "tslog": "^3.3.3",
         "typeorm": "^0.3.6"
     },
     "scripts": {
-        "dev": "tsc-watch --onSuccess \"node dist/src/index.js\"",
-        "debug": "tsc-watch --onSuccess \"node --inspect-brk dist/src/index.js\"",
+        "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+        "debug": "tsc-watch --onSuccess \"node --inspect-brk dist/index.js\"",
         "start": "ts-node src/index.ts",
         "build": "tsc --build",
         "typeorm": "typeorm-ts-node-commonjs"
